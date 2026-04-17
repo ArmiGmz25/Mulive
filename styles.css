@@ -1,0 +1,259 @@
+:root {
+  --bs-body-color: #000000;
+  --bs-body-bg: #d5dadf;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav.navbar {
+  background-color: #0f0f0f; 
+  color: #c0bebe;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar .nav-link {
+  color: #e0e0e0;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-item{
+  border-radius: 16px;
+}
+
+.carousel-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.carousel-img::after {
+  background: rgba(0,0,0,0.3);
+}
+
+.carousel-caption {
+  z-index: 2;
+}
+
+.imageAgency,
+.infoCard {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.imageAgency {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(236, 236, 236, 0.678);
+}
+
+.imageAgency img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.imageAgency::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.imageAgency:hover img {
+  transform: scale(1.05);
+}
+
+
+.infoCard {
+  background: linear-gradient(
+    rgb(247, 247, 247),
+    rgba(240, 240, 240, 0.562)
+  );
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.titles{
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.stat-card {
+    background: linear-gradient(
+    rgb(247, 247, 247),
+    rgba(233, 233, 233, 0.548)
+  );
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  padding: 2.5rem;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.hero-side {
+  position: relative;
+  border-radius: 16px;
+  min-height: 240px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.hero-side {
+  position: relative;
+  border-radius: 16px;
+  min-height: 240px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.hero-side::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("Imgs/analytics.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.hero-side::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.hero-side:hover::before {
+  transform: scale(1.05);
+}
+
+.hero-side:hover::after {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-side a {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-custom {
+  background-color: #EA4C89;
+  color: #ffffff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.btn-custom:hover {
+  background-color: #ff6ba4;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Active (cuando haces click) */
+.btn-custom:active {
+  transform: scale(0.97);
+}
+
+
+.service-card {
+  border-radius: 16px;
+  padding: 2rem;
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.service-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.color-card-white{
+  background: linear-gradient(
+    rgb(247, 247, 247),
+    rgba(233, 233, 233, 0.473)
+  );
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.color-card-pink {
+  color: #f0f0f0;
+  background: linear-gradient(
+    rgb(255, 82, 148),
+    rgba(255, 107, 164, 0.356)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 209, 227, 0.26);
+}
+
+a {
+  color: #EA4C89;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff87b5;
+}
+
+.iconMain svg {
+  width: 32px;
+  height: 32px;
+}
