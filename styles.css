@@ -340,3 +340,47 @@ a:hover {
     background-color: #0f0f0f; 
   color: #c0bebe;
 }
+
+
+
+
+.testimonial-card {
+    background: linear-gradient(
+    rgb(247, 247, 247),
+    rgba(233, 233, 233, 0.473)
+  );
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card img {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 1rem;
+  object-fit: cover;
+  display: flex;
+  margin-inline: auto;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.testimonial-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.color-card-white{
+  background: linear-gradient(
+    rgb(247, 247, 247),
+    rgba(233, 233, 233, 0.473)
+  );
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
