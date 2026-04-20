@@ -114,15 +114,18 @@ document.getElementById("carousel-inner").innerHTML = slides
 const stats = [
   {
     numero: "150+",
+    valor: 150,
     descripcion:
       "Proyectos de diseño y marketing desarrollados para distintas marcas",
   },
   {
     numero: "50+",
+    valor: 50,
     descripcion: "Clientes que han confiado en nuestras soluciones digitales",
   },
   {
     numero: "5+",
+    valor: 5,
     descripcion:
       "Años creando experiencias enfocadas en UX/UI y crecimiento digital",
   },
@@ -133,7 +136,7 @@ document.getElementById("stats-container").innerHTML = stats
     (stat, index) => `
     <div class="col-12 col-lg-4 reveal" style="transition-delay: ${index * 0.15}s">
       <div class="stat-card text-center">
-        <h3 class="fw-bold display-6">${stat.numero}</h3>
+        <h3 class="fw-bold display-6 contador" data-valor="${stat.valor}" data-sufijo="+"}>0+</h3>
         <p class="text-muted mb-0">${stat.descripcion}</p>
       </div>
     </div>
@@ -280,17 +283,37 @@ acordeon.innerHTML = faqs
   )
   .join("");
 
-/* Animaciones */
+//Contador
+function animarContador(el) {
+  const valor = parseInt(el.dataset.valor);
+  const sufijo = el.dataset.sufijo || "";
+  const duracion = 1500;
+  const pasos = 60;
+  const incremento = valor / pasos;
+  let actual = 0;
+  let paso = 0;
+
+  const intervalo = setInterval(() => {
+    paso++;
+    actual = Math.min(Math.round(incremento * paso), valor);
+    el.textContent = actual + sufijo;
+
+    if (paso >= pasos) clearInterval(intervalo);
+  }, duracion / pasos);
+}
+
+/* Observer */
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
+
+        entry.target.querySelectorAll(".contador").forEach(animarContador);
       }
     });
   },
   { threshold: 0.1 },
 );
 
-// Selecciona los elementos que quieres animar
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
