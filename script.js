@@ -37,8 +37,8 @@ const contenedor = document.getElementById("testimonios-container");
 
 contenedor.innerHTML = testimonios
   .map(
-    (t) => `
-  <div class="col-12 col-lg-3">
+    (t, index) => `
+  <div class="col-12 col-lg-3 reveal" style="transition-delay: ${index * 0.15}s">
     <div class="card testimonial-card">
       <img class="card-img-top rounded-circle" src="${t.img}" alt="${t.nombre}" />
       <div class="card-body">
@@ -110,6 +110,37 @@ document.getElementById("carousel-inner").innerHTML = slides
   )
   .join("");
 
+//Datos
+const stats = [
+  {
+    numero: "150+",
+    descripcion:
+      "Proyectos de diseño y marketing desarrollados para distintas marcas",
+  },
+  {
+    numero: "50+",
+    descripcion: "Clientes que han confiado en nuestras soluciones digitales",
+  },
+  {
+    numero: "5+",
+    descripcion:
+      "Años creando experiencias enfocadas en UX/UI y crecimiento digital",
+  },
+];
+
+document.getElementById("stats-container").innerHTML = stats
+  .map(
+    (stat, index) => `
+    <div class="col-12 col-lg-4 reveal" style="transition-delay: ${index * 0.15}s">
+      <div class="stat-card text-center">
+        <h3 class="fw-bold display-6">${stat.numero}</h3>
+        <p class="text-muted mb-0">${stat.descripcion}</p>
+      </div>
+    </div>
+  `,
+  )
+  .join("");
+
 /* FAQ´s */
 
 const faqs = [
@@ -172,3 +203,18 @@ acordeon.innerHTML = faqs
 `,
   )
   .join("");
+
+/* Animaciones */
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  { threshold: 0.1 },
+);
+
+// Selecciona los elementos que quieres animar
+document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
