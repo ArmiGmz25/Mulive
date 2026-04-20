@@ -64,63 +64,9 @@
     <section id="Inicio">
       <!--Carrousel-->
       <div id="carouselExampleDark" class="carousel slide m-3">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div
-            class="carousel-item active carousel-img"
-            data-bs-interval="10000"
-          >
-            <img src="Imgs/carrousel-01.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Transformamos ideas en experiencias digitales</h5>
-              <p>
-                Diseño, tecnología y estrategia para impulsar el crecimiento de
-                tu marca en el entorno digital
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item carousel-img" data-bs-interval="2000">
-            <img src="Imgs/carrousel-02.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Diseño UX/UI y desarrollo web a medida</h5>
-              <p>
-                Creamos interfaces modernas, intuitivas y enfocadas en
-                resultados reales para tu negocio.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item carousel-img">
-            <img src="Imgs/carrousel-03.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Soluciones digitales que generan resultados</h5>
-              <p>
-                Ayudamos a empresas a crecer con productos digitales eficientes,
-                escalables y centrados en el usuario.
-              </p>
-            </div>
-          </div>
-        </div>
+        <div class="carousel-indicators" id="carousel-indicators"></div>
+        <div class="carousel-inner" id="carousel-inner"></div>
+
         <button
           class="carousel-control-prev"
           type="button"
@@ -331,7 +277,7 @@
     </section>
 
     <!-- Testimonios -->
-    <article class="container mt-5">
+    <article class="container mt-5" id="Testimonios">
       <h2 class="titles mb-3">Nuestros Clientes</h2>
       <p class="text-muted pb-2">
         Colaboramos con empresas y emprendedores para transformar sus ideas en

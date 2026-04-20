@@ -55,6 +55,61 @@ contenedor.innerHTML = testimonios
   )
   .join("");
 
+/* Carrousel */
+const slides = [
+  {
+    img: "Imgs/carrousel-01.jpg",
+    titulo: "Transformamos ideas en experiencias digitales",
+    descripcion:
+      "Diseño, tecnología y estrategia para impulsar el crecimiento de tu marca en el entorno digital",
+    intervalo: 10000,
+  },
+  {
+    img: "Imgs/carrousel-02.jpg",
+    titulo: "Diseño UX/UI y desarrollo web a medida",
+    descripcion:
+      "Creamos interfaces modernas, intuitivas y enfocadas en resultados reales para tu negocio.",
+    intervalo: 2000,
+  },
+  {
+    img: "Imgs/carrousel-03.jpg",
+    titulo: "Soluciones digitales que generan resultados",
+    descripcion:
+      "Ayudamos a empresas a crecer con productos digitales eficientes, escalables y centrados en el usuario.",
+  },
+];
+
+// Indicators
+document.getElementById("carousel-indicators").innerHTML = slides
+  .map(
+    (_, index) => `
+    <button
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide-to="${index}"
+      ${index === 0 ? 'class="active" aria-current="true"' : ""}
+      aria-label="Slide ${index + 1}"
+    ></button>
+  `,
+  )
+  .join("");
+
+// Slides
+document.getElementById("carousel-inner").innerHTML = slides
+  .map(
+    (slide, index) => `
+    <div class="carousel-item ${index === 0 ? "active" : ""} carousel-img"
+      ${slide.intervalo ? `data-bs-interval="${slide.intervalo}"` : ""}>
+      <img src="${slide.img}" class="d-block w-100" alt="${slide.titulo}" />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>${slide.titulo}</h5>
+        <p>${slide.descripcion}</p>
+      </div>
+    </div>
+  `,
+  )
+  .join("");
+
 /* FAQ´s */
 
 const faqs = [
