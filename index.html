@@ -17,11 +17,12 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!--NavBar-->
     <nav class="navbar navbar-expand-lg shadow ps-4 sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand fs-3 fw-normal" href="#">Grupo Mulive</a>
+        <a class="navbar-brand fs-3 fw-normal" href="#Inicio">Grupo Mulive</a>
 
         <button
           class="navbar-toggler"
@@ -44,181 +45,190 @@
               <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="#Servicios">Servicios</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="#">Servicios</a>
+              <a class="nav-link" href="#Testimonios">Testimonios</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#FAQs">FAQ´s</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#Contacto">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!--Carrousel-->
-    <div id="carouselExampleDark" class="carousel slide m-3">
-      <div class="carousel-indicators">
+    <section id="Inicio">
+      <!--Carrousel-->
+      <div id="carouselExampleDark" class="carousel slide m-3">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active carousel-img"
+            data-bs-interval="10000"
+          >
+            <img src="Imgs/carrousel-01.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Transformamos ideas en experiencias digitales</h5>
+              <p>
+                Diseño, tecnología y estrategia para impulsar el crecimiento de
+                tu marca en el entorno digital
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-img" data-bs-interval="2000">
+            <img src="Imgs/carrousel-02.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Diseño UX/UI y desarrollo web a medida</h5>
+              <p>
+                Creamos interfaces modernas, intuitivas y enfocadas en
+                resultados reales para tu negocio.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-img">
+            <img src="Imgs/carrousel-03.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Soluciones digitales que generan resultados</h5>
+              <p>
+                Ayudamos a empresas a crecer con productos digitales eficientes,
+                escalables y centrados en el usuario.
+              </p>
+            </div>
+          </div>
+        </div>
         <button
+          class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
         <button
+          class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active carousel-img" data-bs-interval="10000">
-          <img src="Imgs/carrousel-01.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Transformamos ideas en experiencias digitales</h5>
-            <p>
-              Diseño, tecnología y estrategia para impulsar el crecimiento de tu
-              marca en el entorno digital
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item carousel-img" data-bs-interval="2000">
-          <img src="Imgs/carrousel-02.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Diseño UX/UI y desarrollo web a medida</h5>
-            <p>
-              Creamos interfaces modernas, intuitivas y enfocadas en resultados
-              reales para tu negocio.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item carousel-img">
-          <img src="Imgs/carrousel-03.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Soluciones digitales que generan resultados</h5>
-            <p>
-              Ayudamos a empresas a crecer con productos digitales eficientes,
-              escalables y centrados en el usuario.
-            </p>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
-    <!--Presentación-->
-    <article class="container mt-5">
-      <div class="row g-3">
-        <div class="col-12 col-lg-4">
-          <div class="imageAgency">
-            <img src="Imgs/team.jpg" alt="Equipo creativo trabajando" />
+      <!--Presentación-->
+      <article class="container mt-5">
+        <div class="row g-3">
+          <div class="col-12 col-lg-4">
+            <div class="imageAgency">
+              <img src="Imgs/team.jpg" alt="Equipo creativo trabajando" />
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="infoCard">
+              <h2 class="titles mb-3">
+                Creamos experiencias digitales que conectan
+              </h2>
+              <p class="text-muted">
+                En Grupo Mulive ayudamos a marcas a destacar en el entorno
+                digital a través de diseño estratégico, branding y marketing
+                creativo. Combinamos creatividad, tecnología y análisis para
+                transformar ideas en resultados medibles.
+                <br />
+                Desde la creación de identidad visual hasta el desarrollo de
+                campañas digitales, ofrecemos soluciones completas que impulsan
+                el crecimiento de tu marca. Nuestro enfoque se centra en la
+                experiencia del usuario, la innovación y la optimización
+                continua.
+              </p>
+              <a href="#" class="text-decoration-none fw-semibold">
+                Ver servicios →
+              </a>
+            </div>
           </div>
         </div>
-        <div class="col-12 col-lg-8">
-          <div class="infoCard">
+      </article>
+
+      <!-- Datos -->
+      <article class="container mt-5">
+        <div class="row g-3 align-items-center">
+          <div class="col-12 col-lg-6">
             <h2 class="titles mb-3">
-              Creamos experiencias digitales que conectan
+              Impulsamos marcas a través de diseño y marketing digital
             </h2>
             <p class="text-muted">
-              En Grupo Mulive ayudamos a marcas a destacar en el entorno digital
-              a través de diseño estratégico, branding y marketing creativo.
-              Combinamos creatividad, tecnología y análisis para transformar
-              ideas en resultados medibles.
-              <br />
-              Desde la creación de identidad visual hasta el desarrollo de
-              campañas digitales, ofrecemos soluciones completas que impulsan el
-              crecimiento de tu marca. Nuestro enfoque se centra en la
-              experiencia del usuario, la innovación y la optimización continua.
-            </p>
-            <a href="#" class="text-decoration-none fw-semibold">
-              Ver servicios →
-            </a>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- Datos -->
-    <article class="container mt-5">
-      <div class="row g-3 align-items-center">
-        <div class="col-12 col-lg-6">
-          <h2 class="titles mb-3">
-            Impulsamos marcas a través de diseño y marketing digital
-          </h2>
-          <p class="text-muted">
-            En Grupo Mulive combinamos creatividad, estrategia y tecnología para
-            desarrollar experiencias digitales que generan impacto real.
-            Trabajamos con empresas que buscan diferenciarse y crecer en un
-            entorno competitivo, construyendo soluciones enfocadas en
-            resultados.
-          </p>
-        </div>
-
-        <div class="col-12 col-lg-6">
-          <div class="hero-side">
-            <a href="#" class="btn btn-custom rounded-pill px-4"> Ver más </a>
-          </div>
-        </div>
-
-        <div class="col-12 col-lg-4">
-          <div class="stat-card text-center">
-            <h3 class="fw-bold display-6">150+</h3>
-            <p class="text-muted mb-0">
-              Proyectos de diseño y marketing desarrollados para distintas
-              marcas
+              En Grupo Mulive combinamos creatividad, estrategia y tecnología
+              para desarrollar experiencias digitales que generan impacto real.
+              Trabajamos con empresas que buscan diferenciarse y crecer en un
+              entorno competitivo, construyendo soluciones enfocadas en
+              resultados.
             </p>
           </div>
-        </div>
 
-        <div class="col-12 col-lg-4">
-          <div class="stat-card text-center">
-            <h3 class="fw-bold display-6">50+</h3>
-            <p class="text-muted mb-0">
-              Clientes que han confiado en nuestras soluciones digitales
-            </p>
+          <div class="col-12 col-lg-6">
+            <div class="hero-side">
+              <a href="#" class="btn btn-custom rounded-pill px-4"> Ver más </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="stat-card text-center">
+              <h3 class="fw-bold display-6">150+</h3>
+              <p class="text-muted mb-0">
+                Proyectos de diseño y marketing desarrollados para distintas
+                marcas
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="stat-card text-center">
+              <h3 class="fw-bold display-6">50+</h3>
+              <p class="text-muted mb-0">
+                Clientes que han confiado en nuestras soluciones digitales
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="stat-card text-center">
+              <h3 class="fw-bold display-6">5+</h3>
+              <p class="text-muted mb-0">
+                Años creando experiencias enfocadas en UX/UI y crecimiento
+                digital
+              </p>
+            </div>
           </div>
         </div>
-
-        <div class="col-12 col-lg-4">
-          <div class="stat-card text-center">
-            <h3 class="fw-bold display-6">5+</h3>
-            <p class="text-muted mb-0">
-              Años creando experiencias enfocadas en UX/UI y crecimiento digital
-            </p>
-          </div>
-        </div>
-      </div>
-    </article>
-
+      </article>
+    </section>
     <!-- Servicios -->
-    <section class="services container mt-5">
+    <section class="services container mt-5" id="Servicios">
       <div class="row g-3">
         <div class="col-12 col-lg-4 order-2 order-lg-1">
           <div class="service-card color-card-pink">
@@ -321,8 +331,7 @@
     </section>
 
     <!-- Testimonios -->
-    <!-- Testimonios -->
-    <article class="container mt-5">
+    <article class="container mt-5" id="Testimonios">
       <h2 class="titles mb-3">Nuestros Clientes</h2>
       <p class="text-muted pb-2">
         Colaboramos con empresas y emprendedores para transformar sus ideas en
@@ -445,7 +454,7 @@
     </article>
 
     <!-- Preguntas Frecuentes -->
-    <article class="container mt-5">
+    <article class="container mt-5" id="FAQs">
       <h2 class="titles mb-3">Preguntas Frecuentes</h2>
       <p class="text-muted">
         Resolvemos las dudas más comunes sobre nuestros servicios de diseño,
@@ -461,7 +470,7 @@
         </div>
 
         <div class="col-12 col-lg-8">
-          <div class="accordion" id="accordionExample">
+          <div class="accordion" id="accordion-Faqs">
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
@@ -478,9 +487,9 @@
               <div
                 id="collapseOne"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion-Faqs"
               >
-                <div class="accordion-body">
+                <div class="accordion-body text-muted">
                   Ofrecemos servicios de diseño gráfico, branding, diseño UX/UI,
                   desarrollo web, creación de contenido visual y estrategias de
                   marketing digital para ayudar a las marcas a crecer en el
@@ -505,9 +514,9 @@
               <div
                 id="collapseTwo"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion-Faqs"
               >
-                <div class="accordion-body">
+                <div class="accordion-body text-muted">
                   Trabajamos con negocios de distintos tamaños, desde
                   emprendimientos y marcas personales hasta empresas que buscan
                   renovar su presencia digital o mejorar la experiencia de sus
@@ -532,9 +541,9 @@
               <div
                 id="collapseThree"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion-Faqs"
               >
-                <div class="accordion-body">
+                <div class="accordion-body text-muted">
                   Sí. Podemos acompañarte desde la definición visual de la marca
                   hasta el diseño de interfaces, desarrollo del sitio web y
                   planteamiento de una estrategia digital alineada con tus
@@ -559,9 +568,9 @@
               <div
                 id="collapseFour"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion-Faqs"
               >
-                <div class="accordion-body">
+                <div class="accordion-body text-muted">
                   El tiempo depende del alcance del proyecto. Una identidad
                   visual puede tomar pocas semanas, mientras que un sitio web o
                   una solución digital más completa puede requerir más tiempo
@@ -586,9 +595,9 @@
               <div
                 id="collapseFive"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion-Faqs"
               >
-                <div class="accordion-body">
+                <div class="accordion-body text-muted">
                   El primer paso es compartirnos tu idea, necesidad o meta. A
                   partir de eso podemos definir el alcance, proponer una
                   solución adecuada y estructurar un plan de trabajo claro para
@@ -602,11 +611,11 @@
     </article>
 
     <!-- Contacto -->
-    <article class="container mt-5">
+    <article class="container mt-5" id="Contacto">
       <div class="row g-4">
         <div class="col-12 col-lg-12">
           <h3 class="titles mb-3">Contacto</h3>
-          <p class="mb-4 text-muted">
+          <p class="mb-4 text-muted text-muted">
             En Grupo Mulive estamos listos para ayudarte a transformarlo en una
             experiencia digital funcional, atractiva y enfocada en resultados.
             <br />

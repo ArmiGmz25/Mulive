@@ -3,6 +3,11 @@
   --bs-body-bg: #d5dadf;
 }
 
+html {
+  scroll-padding-top: 75px; 
+  scroll-behavior: smooth; 
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -354,7 +359,8 @@ a:hover {
   border-radius: 16px;
   height: 100%;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.4s ease, border-color 0.4s ease;
+
 }
 
 .testimonial-card img {
@@ -369,6 +375,7 @@ a:hover {
 .testimonial-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+
 }
 
 .testimonial-card .icon {
@@ -376,11 +383,50 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-.color-card-white{
-  background: linear-gradient(
-    rgb(247, 247, 247),
-    rgba(233, 233, 233, 0.473)
-  );
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+
+.testimonial-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgb(14, 14, 14), rgba(27, 27, 27, 0.61));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  border-radius: 16px;
+}
+
+.testimonial-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-card:hover {
+  color: #f0f0f0;
+  border-color: rgba(255, 209, 227, 0.26);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card:hover::after {
+  opacity: 1;
+}
+
+.testimonial-card:hover .text-muted,
+.testimonial-card:hover .text-body-secondary {
+  color: rgba(240, 240, 240, 0.8) !important;
+  transition: color 0.4s ease;
+}
+
+
+#accordion-Faqs {
+  --bs-accordion-active-bg: none;
+  --bs-accordion-active-color: #0a0a0a;
+  --bs-accordion-border-color: none;
+  --bs-accordion-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+
+.accordion-button {
+  font-weight: 500; 
 }
