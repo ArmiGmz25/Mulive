@@ -198,7 +198,7 @@ document.getElementById("servicios-container").innerHTML = `
             Diseñamos experiencias digitales que convierten visitantes en clientes.
             Nos enfocamos en usabilidad, velocidad y resultados medibles.
           </p>
-          <a href="#" class="text-decoration-none fw-semibold reveal" style="transition-delay: 0.3s">
+          <a href="#Contacto" class="text-decoration-none fw-semibold reveal" style="transition-delay: 0.3s">
             Trabajemos juntos →
           </a>
         </div>

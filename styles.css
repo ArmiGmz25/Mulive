@@ -3,22 +3,16 @@
   --bs-body-bg: #d5dadf;
 }
 
-/* Estado inicial — elementos invisibles */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-/* Estado cuando ya es visible */
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
-
-
-
 
 html {
   scroll-padding-top: 75px; 
@@ -43,7 +37,7 @@ nav.navbar {
 }
 
 .navbar .nav-link:hover {
-  color: #ffffff;
+  color: #ff6ba4;
 }
 
 .navbar-toggler {
