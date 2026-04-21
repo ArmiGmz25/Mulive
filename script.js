@@ -89,7 +89,7 @@ const slides = [
     titulo: "Diseño UX/UI y desarrollo web a medida",
     descripcion:
       "Creamos interfaces modernas, intuitivas y enfocadas en resultados reales para tu negocio.",
-    intervalo: 2000,
+    intervalo: 10000,
   },
   {
     img: "Imgs/carrousel-03.jpg",

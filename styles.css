@@ -49,7 +49,7 @@ nav.navbar {
 }
 
 .carousel-item img {
-  height: 500px;
+  height: 480px;
   object-fit: cover;
 }
 
@@ -442,4 +442,73 @@ a:hover {
 
 .accordion-button {
   font-weight: 500; 
+}
+
+/* Hero Section */
+.hero-label {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.2rem;
+  color: #EA4C89;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0.2rem;
+  color: #0f0f0f;
+}
+
+.hero-highlight {
+  color: #EA4C89;
+}
+
+.hero-divider {
+  max-width: 600px;
+  height: 3px;
+  background: #EA4C89;
+  margin: 1.5rem 0;
+  border-radius: 2px;
+}
+
+.hero-sub {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: #888;
+  line-height: 1.6;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: linear-gradient(rgb(255, 82, 148), rgba(255, 107, 164, 0.8));
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-top: 1.5rem;
+}
+
+.hero-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #0f0f0f;
+  color: #ffffff !important;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none !important;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.hero-cta:hover {
+  background: #EA4C89;
+  transform: translateY(-2px);
 }
