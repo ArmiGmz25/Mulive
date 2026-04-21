@@ -283,6 +283,9 @@ acordeon.innerHTML = faqs
   )
   .join("");
 
+//Footer
+document.getElementById("year").textContent = new Date().getFullYear();
+
 //Contador
 function animarContador(el) {
   const valor = parseInt(el.dataset.valor);
@@ -310,6 +313,7 @@ const observer = new IntersectionObserver(
         entry.target.classList.add("visible");
 
         entry.target.querySelectorAll(".contador").forEach(animarContador);
+        observer.unobserve(entry.target);
       }
     });
   },
