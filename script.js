@@ -1,3 +1,14 @@
+//NavBar
+document.querySelectorAll(".nav-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    }
+  });
+});
+
+//Testimonios
 const testimonios = [
   {
     nombre: "Fernando García",
@@ -136,7 +147,7 @@ document.getElementById("stats-container").innerHTML = stats
     (stat, index) => `
     <div class="col-12 col-lg-4 reveal" style="transition-delay: ${index * 0.15}s">
       <div class="stat-card text-center">
-        <h3 class="fw-bold display-6 contador" data-valor="${stat.valor}" data-sufijo="+"}>0+</h3>
+        <h3 class="fw-bold display-6 contador" data-valor="${stat.valor}" data-sufijo="+">0+</h3>
         <p class="text-muted mb-0">${stat.descripcion}</p>
       </div>
     </div>
