@@ -11,7 +11,8 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
-    const target = document.querySelector(link.getAttribute("href"));
+    const href = link.getAttribute("href");
+    const target = href === "#" ? document.body : document.querySelector(href);
     if (target) target.scrollIntoView({ behavior: "smooth" });
   });
 });
