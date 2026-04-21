@@ -66,7 +66,7 @@ contenedor.innerHTML = testimonios
         <h6 class="card-subtitle mb-2 text-muted">${t.cargo}</h6>
         <p class="card-body">"${t.texto}"</p>
         <p class="card-text">
-          <small class="text-body-secondary">${t.fecha}</small>
+          <small class="text-body-secondary fixed-bottom pb-3">${t.fecha}</small>
         </p>
       </div>
     </div>

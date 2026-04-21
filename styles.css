@@ -49,7 +49,7 @@ nav.navbar {
 }
 
 .carousel-item img {
-  height: 480px;
+  height: 430px;
   object-fit: cover;
 }
 
@@ -497,7 +497,7 @@ a:hover {
 
 .hero-cta {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: .5rem;
   background: #0f0f0f;
   color: #ffffff !important;
   padding: 0.75rem 2rem;
