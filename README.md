@@ -4,7 +4,6 @@ Modern responsive landing page for a digital design and marketing agency, focuse
 
 🔗 Live Demo: https://mulive.vercel.app/
 
----
 
 ## ✨ Overview
 
@@ -16,7 +15,6 @@ The project emphasizes:
 - Responsive design across devices
 - Strategic content structure for business impact
 
----
 
 ## 🧠 Key Features
 
@@ -28,7 +26,6 @@ The project emphasizes:
 - 🧩 Dynamic rendering of services, testimonials, and FAQs
 - 🔗 SEO & social sharing optimization with Open Graph
 
----
 
 ## 🛠️ Tech Stack
 
@@ -40,7 +37,6 @@ The project emphasizes:
 | Bootstrap 5 | Grid system & responsive components |
 | Google Fonts (Montserrat) | Typography & branding |
 
----
 
 ## 🎯 UX/UI Approach
 
@@ -50,13 +46,11 @@ This project was designed with a strong focus on:
 - Clean and modern interface aesthetics
 - Accessibility and readability
 
----
 
 ## 🚀 Deployment
 
 Hosted on Vercel — [![Vercel](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=flat&logo=vercel)](https://mulive.vercel.app/)
 
----
 
 ## 👨‍💻 Author
 
