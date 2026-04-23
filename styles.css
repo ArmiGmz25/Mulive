@@ -619,3 +619,13 @@ a:hover {
   color: #aaaaaa;
   letter-spacing: 0.05rem;
 }
+
+#toast-success {
+  background-color: #198754;
+  color: white;
+}
+
+#toast-error {
+  background-color: #dc3545;
+  color: white;
+}
