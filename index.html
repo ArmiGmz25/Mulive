@@ -235,72 +235,168 @@
     </article>
 
     <!-- Contacto -->
-    <button id="btn-top" aria-label="Volver arriba">↑</button>
     <article class="container mt-5" id="Contacto">
-      <div class="row g-4">
-        <div class="col-12 col-lg-12">
-          <h3 class="titles mb-3 reveal" style="transition-delay: 0s">
-            Contacto
-          </h3>
-          <p class="mb-4 text-muted reveal" style="transition-delay: 0.1s">
-            En Grupo Mulive estamos listos para ayudarte a transformarlo en una
-            experiencia digital funcional, atractiva y enfocada en resultados.
-            <br />
-            Contáctanos y construyamos algo increíble juntos.
-          </p>
-
-          <div class="row g-3">
-            <div class="col-12 col-lg-6 reveal" style="transition-delay: 0.2s">
-              <div class="stat-card-contact text-center">
-                <div class="iconMain pb-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-telephone"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
-                    />
-                  </svg>
-                </div>
-                <h5 class="titles-secondary">Teléfono</h5>
-                <p class="text-muted">(+52) 56 3344 1243</p>
-              </div>
-            </div>
-
-            <div class="col-12 col-lg-6 reveal" style="transition-delay: 0.35s">
-              <a
-                href="mailto:contacto@gmulive.com"
-                class="text-decoration-none"
-              >
-                <div class="stat-card-contact text-center">
-                  <div class="iconMain pb-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-envelope"
-                      viewBox="0 0 16 16"
+      <h3 class="titles mb-3 reveal" style="transition-delay: 0s">Contacto</h3>
+      <p class="mb-4 text-muted reveal" style="transition-delay: 0.1s">
+        En Grupo Mulive estamos listos para ayudarte a transformarlo en una
+        experiencia digital funcional, atractiva y enfocada en resultados.
+        <br />
+        Contáctanos y construyamos algo increíble juntos.
+      </p>
+      <div class="form-card">
+        <div class="row g-3">
+          <div class="col-12 col-lg-12">
+            <div class="row g-3">
+              <div class="col-12 col-lg-6">
+                <h2>Trabajemos Juntos</h2>
+                <form id="contact-form" novalidate>
+                  <!-- Nombre -->
+                  <div class="mb-3">
+                    <label for="contact-nombre" class="form-label"
+                      >Nombre</label
                     >
-                      <path
-                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
-                      />
-                    </svg>
+                    <input
+                      type="text"
+                      id="contact-nombre"
+                      name="from_name"
+                      class="form-control"
+                      placeholder="Tu nombre"
+                      autocomplete="name"
+                      required
+                    />
                   </div>
-                  <h5 class="titles-secondary">Correo</h5>
-                  <p class="text-muted">contacto@gmulive.com</p>
+
+                  <!-- Correo -->
+                  <div class="mb-3">
+                    <label for="contact-email" class="form-label">Correo</label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="from_email"
+                      class="form-control"
+                      placeholder="tucorreo@email.com"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+
+                  <!--Teléfono-->
+                  <div class="mb-3">
+                    <label for="contact-tel" class="form-label">Teléfono</label>
+                    <input
+                      type="tel"
+                      id="contact-tel"
+                      name="phone"
+                      class="form-control"
+                      placeholder="+52 55 0000 0000"
+                      autocomplete="tel"
+                    />
+                  </div>
+
+                  <!-- Mensaje -->
+                  <div class="mb-4">
+                    <label for="contact-msg" class="form-label">Mensaje</label>
+                    <textarea
+                      id="contact-msg"
+                      name="message"
+                      class="form-control"
+                      rows="4"
+                      placeholder="Cuéntanos tu proyecto..."
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    id="contact-btn"
+                    class="btn-custom rounded-pill px-4 py-2 w-100"
+                  >
+                    Enviar mensaje
+                  </button>
+                </form>
+              </div>
+
+              <div
+                class="col-12 col-lg-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="d-flex flex-column gap-2 gap-lg-5">
+                  <!-- Dirección -->
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-geo-alt"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                        />
+                        <path
+                          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="contact-info-title">Dirección</p>
+                      <p class="contact-info-value">Ciudad de México, México</p>
+                    </div>
+                  </div>
+
+                  <!-- Correo -->
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-envelope"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="contact-info-title">Correo</p>
+                      <p class="contact-info-value">contacto@gmulive.com</p>
+                    </div>
+                  </div>
+
+                  <!-- Teléfono -->
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-telephone"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="contact-info-title">Teléfono</p>
+                      <p class="contact-info-value">(+52) 56 3344 1243</p>
+                    </div>
+                  </div>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </article>
 
+    <!-- Volver Arriba-->
+    <button id="btn-top" aria-label="Volver arriba">↑</button>
     <!-- Footer -->
     <footer class="footer mt-5 py-3">
       <p class="text-center">© Grupo Mulive</p>
@@ -310,7 +406,53 @@
       </p>
     </footer>
 
+    <!-- Toast Éxito -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="toast-success"
+        class="toast align-items-center border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            Mensaje enviado. ¡Pronto te contactaremos!
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <!-- Toast Error -->
+      <div
+        id="toast-error"
+        class="toast align-items-center border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Ocurrió un error. Intenta de nuevo.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      emailjs.init("jIAD_hn4AaXQSWr_L");
+    </script>
     <script src="script.js"></script>
+    <script src="emailService.js"></script>
   </body>
 </html>
