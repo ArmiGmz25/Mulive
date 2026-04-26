@@ -130,6 +130,18 @@ document.getElementById("carousel-inner").innerHTML = slides
   )
   .join("");
 
+// Skeleton
+const primeraImg = new Image();
+primeraImg.src = slides[0].img;
+primeraImg.onload = () => {
+  document.getElementById("carousel-skeleton").classList.add("d-none");
+  document.getElementById("carouselExampleDark").classList.remove("d-none");
+};
+primeraImg.onerror = () => {
+  document.getElementById("carousel-skeleton").classList.add("d-none");
+  document.getElementById("carouselExampleDark").classList.remove("d-none");
+};
+
 //Datos
 const stats = [
   {
@@ -351,4 +363,6 @@ const observer = new IntersectionObserver(
   { threshold: 0.1 },
 );
 
-document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+document
+  .querySelectorAll(".reveal, .reveal-fade")
+  .forEach((el) => observer.observe(el));

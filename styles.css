@@ -14,6 +14,16 @@
   transform: translateY(0);
 }
 
+
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.reveal-fade.visible {
+  opacity: 1;
+}
+
 html {
   scroll-padding-top: 75px; 
   scroll-behavior: smooth; 
@@ -77,6 +87,10 @@ nav.navbar {
 
 .carousel-caption {
   z-index: 2;
+}
+
+#carousel-skeleton .placeholder {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .imageAgency,
@@ -446,7 +460,7 @@ a:hover {
 /* Hero Section */
 .hero-label {
   margin-top: 1rem;
-  margin-left: 1rem;
+  margin-left: .5rem;
   font-size: 0.75rem;
   letter-spacing: 0.2rem;
   color: #EA4C89;
