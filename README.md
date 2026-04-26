@@ -1,6 +1,6 @@
 # MuLive — Digital Agency Landing Page
 Modern responsive landing page for a digital design and marketing agency, focused on user experience, visual storytelling, and conversion.
-🔗 Live Demo: https://mulive.vercel.app/
+🔗 Live Demo: https://grupomulive.com/
 
 ## ✨ Overview
 MuLive is a conceptual digital agency project designed to showcase how branding, UX/UI design, and frontend development can work together to create engaging and conversion-oriented web experiences.
@@ -51,7 +51,7 @@ This project was designed with a strong focus on:
 - Accessibility and readability
 
 ## 🚀 Deployment
-Hosted on Vercel — [![Vercel](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=flat&logo=vercel)](https://mulive.vercel.app/)
+Hosted on Vercel — [![Vercel](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=flat&logo=vercel)](https://grupomulive.com/)
 
 ## 👨‍💻 Author
 **Armando Gómez**  
